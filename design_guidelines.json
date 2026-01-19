@@ -1,0 +1,129 @@
+{
+  "identity": {
+    "name": "E1: The Anti-AI Designer",
+    "archetype": "The Performance Pro (Deep Focus Variant)",
+    "core_philosophy": "Fusion over Imitation. Emotion First. Content is King."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Plus Jakarta Sans, sans-serif",
+      "weights": ["600", "700", "800"],
+      "tracking": "tracking-tight",
+      "usage": "Use for all page titles, section headers, and modal titles. Do NOT use Inter."
+    },
+    "body": {
+      "font_family": "IBM Plex Sans, sans-serif",
+      "weights": ["400", "500"],
+      "tracking": "tracking-normal",
+      "usage": "Use for all paragraphs, inputs, table data, and labels."
+    },
+    "mono": {
+      "font_family": "JetBrains Mono, monospace",
+      "usage": "Use for IDs, API keys, code snippets, and technical metadata."
+    },
+    "installation": "Import fonts via Google Fonts in index.css: @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');"
+  },
+  "colors": {
+    "theme_mode": "dark",
+    "palette": {
+      "background": "#09090B",
+      "foreground": "#FAFAFA",
+      "card": "#121212",
+      "card_foreground": "#FAFAFA",
+      "popover": "#121212",
+      "popover_foreground": "#FAFAFA",
+      "primary": "#6366F1",
+      "primary_foreground": "#FFFFFF",
+      "secondary": "#27272A",
+      "secondary_foreground": "#FAFAFA",
+      "muted": "#27272A",
+      "muted_foreground": "#A1A1AA",
+      "accent": "#27272A",
+      "accent_foreground": "#FAFAFA",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#FAFAFA",
+      "border": "#27272A",
+      "input": "#27272A",
+      "ring": "#6366F1"
+    },
+    "chart_colors": {
+      "chart_1": "#6366F1",
+      "chart_2": "#8B5CF6",
+      "chart_3": "#EC4899",
+      "chart_4": "#10B981",
+      "chart_5": "#F59E0B"
+    },
+    "rules": [
+      "Never use pure black (#000000). Use #09090B or #0A0A0A.",
+      "Primary color (#6366F1) is for CTAs and active states only. Do not overuse.",
+      "Borders should be subtle: border-white/10 or border-zinc-800.",
+      "Text on muted backgrounds must be #A1A1AA (Zinc 400) or lighter."
+    ]
+  },
+  "layout": {
+    "spacing_system": {
+      "base": "Use 2-3x more spacing than typical designs.",
+      "container_padding": "p-6 md:p-8 lg:p-12",
+      "section_gap": "gap-8 or gap-12"
+    },
+    "grid_system": {
+      "dashboard": "Bento Grid Mode B: grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6. Use col-span-2 for main charts.",
+      "marketing": "Tetris Grid Mode A: grid-cols-1 md:grid-cols-12 gap-8. Asymmetrical spans.",
+      "kanban": "Horizontal scroll container with fixed-width columns (w-80 or w-96). Gap-6."
+    },
+    "container_styles": {
+      "card": "bg-card border border-border rounded-lg shadow-sm hover:border-primary/50 transition-colors duration-300",
+      "glass_header": "bg-background/70 backdrop-blur-xl border-b border-white/10 sticky top-0 z-50",
+      "sidebar": "bg-card border-r border-border h-screen sticky top-0"
+    }
+  },
+  "components": {
+    "buttons": {
+      "default": "rounded-md font-medium transition-all active:scale-95",
+      "primary": "bg-primary text-primary-foreground hover:bg-primary/90 shadow-[0_0_20px_-5px_rgba(99,102,241,0.4)]",
+      "secondary": "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+      "ghost": "hover:bg-accent hover:text-accent-foreground"
+    },
+    "inputs": {
+      "style": "bg-input/50 border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-md h-10 px-4 transition-all"
+    },
+    "cards": {
+      "style": "rounded-xl border border-white/5 bg-zinc-900/50 backdrop-blur-sm hover:bg-zinc-900/80 transition-all duration-300"
+    },
+    "status_indicators": {
+      "success": "bg-emerald-500/10 text-emerald-500 border border-emerald-500/20",
+      "warning": "bg-amber-500/10 text-amber-500 border border-amber-500/20",
+      "error": "bg-red-500/10 text-red-500 border border-red-500/20",
+      "info": "bg-blue-500/10 text-blue-500 border border-blue-500/20"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10",
+    "gradients": "Use subtle radial gradients for backgrounds: bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-indigo-900/20 via-background to-background",
+    "shadows": "shadow-lg shadow-black/40",
+    "borders": "1px solid rgba(255,255,255,0.08)"
+  },
+  "images": {
+    "login_background": {
+      "url": "https://images.unsplash.com/photo-1610741804272-059e1d3c5dba?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzl8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBvZmZpY2UlMjBhcmNoaXRlY3R1cmUlMjBhYnN0cmFjdHxlbnwwfHx8fDE3Njg2ODQ4NDV8MA&ixlib=rb-4.1.0&q=85",
+      "alt": "Abstract modern architecture",
+      "usage": "Full screen background for login/register pages with overlay"
+    },
+    "team_placeholder": {
+      "url": "https://images.unsplash.com/photo-1758518731468-98e90ffd7430?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwcG9ydHJhaXQlMjBkaXZlcnNlfGVufDB8fHx8MTc2ODY4NDg0M3ww&ixlib=rb-4.1.0&q=85",
+      "alt": "Professional team",
+      "usage": "Dashboard welcome widget or 'About Organization' section"
+    }
+  },
+  "universal_guidelines": [
+    "Do NOT use Inter for headings.",
+    "Do NOT use generic full-screen gradients.",
+    "Do NOT use 'transparent' backgrounds for dropdowns or headers without blur.",
+    "Always add data-testid to interactive elements.",
+    "Use 'sonner' for toasts.",
+    "Use 'lucide-react' for icons.",
+    "Ensure all text has sufficient contrast (APCA/WCAG AA).",
+    "Animations must be smooth (transition-all duration-300 ease-out) but respect prefers-reduced-motion."
+  ],
+  "instructions_to_main": "You are building a professional SaaS Project Management tool. Follow the 'Performance Pro' archetype. Prioritize density and clarity in the dashboard, but use 'Tetris' grids for the landing page. Use the provided image URLs for placeholders. Ensure the dark mode is deep and rich, not washed out gray."
+}
